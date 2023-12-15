@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@500&family=Oswald:wght@500&family=Roboto:ital@1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #DCEDFF;
+}
+
+.quiz-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h3{
+    border-bottom: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.quiz-container-question {
+    height: 70vh;
+    padding: 15px;
+    width: 55%;
+    border-radius: 5px;
+    color: white;
+    font-size: large;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #807CA2;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+
+.quiz-container-option {
+    display: flex;
+    justify-content: center;
+    height: 70%;
+}
+
+.quiz-container-ul {
+    width: 80%;
+    padding-inline-start: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    list-style-type: none;
+}
+
+.quiz-container-li {
+    font-family: Oswald;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    cursor: pointer;
+    height: 45px;
+    width: 90%;
+}
+
+.quiz-container-li:hover {
+    background-color: lightblue;
+}
+
+.score{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.score h2{
+    display: flex;
+    flex-flow: column;
+    background-color:#807CA2;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    color: white;
+}
+
+.score h2 button{
+    width: 100px;
+}
+
+.btn-div{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+@media (max-width: 900px) {
+    .quiz-container-li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Oswald;
+        color: black;
+        background-color: white;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+        cursor: pointer;
+        height: 50px;
+        width: 90%;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .quiz-container-li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Oswald;
+        color: black;
+        background-color: white;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+        cursor: pointer;
+        height: 40px;
+        width: 90%;
+    }
+    .quiz-container-ul {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        gap: 20px;
+    }
+
+    .quiz-container-question {
+        height: 70vh;
+        width: 70%;
+        border-radius: 5px;
+        color: white;
+        font-size: large;
+        text-align: center;
+        background-color: #807CA2;
+        box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    }
+  }
+  @media (max-width: 500px) {
+    .quiz-container-li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: black;
+        background-color: white;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+        cursor: pointer;
+        height: 50px;
+        width: 100%;
+    }
+    .quiz-container-ul {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        gap: 20px;
+    }
+
+    .quiz-container-question {
+        height: 80vh;
+        width: 70%;
+        border-radius: 5px;
+        color: white;
+        font-size: large;
+        text-align: center;
+        background-color: #807CA2;
+        box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    }
+  }
